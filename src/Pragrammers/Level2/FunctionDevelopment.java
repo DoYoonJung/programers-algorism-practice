@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
-// 기능개발
+//기능개발
 public class FunctionDevelopment {
 
     public static void main(String[] args) {
