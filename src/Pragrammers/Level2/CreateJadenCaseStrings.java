@@ -1,6 +1,6 @@
 package Pragrammers.Level2;
 
-import java.util.Locale;
+
 
 //JadenCase 문자열 만들기
 public class CreateJadenCaseStrings {
