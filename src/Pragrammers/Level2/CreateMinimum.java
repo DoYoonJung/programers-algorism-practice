@@ -2,7 +2,7 @@ package Pragrammers.Level2;
 
 import java.util.Arrays;
 
-//최솟값 만들기
+// 최솟값 만들기
 public class CreateMinimum {
 
     public static void main(String[] args) {
