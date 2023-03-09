@@ -2,7 +2,7 @@ package Pragrammers.Level2;
 
 import java.util.HashMap;
 
-// 오픈채팅방
+//오픈채팅방
 public class OpenChatRoom {
     static HashMap<String, String> map = new HashMap<>();
     static HashMap<String, String> behavior = new HashMap<>();
