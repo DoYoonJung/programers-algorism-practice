@@ -1,6 +1,6 @@
 package Pragrammers.Level2;
 
-// 문자열 압축
+//문자열 압축
 public class StringCompression {
 
     public static void main(String[] args) {

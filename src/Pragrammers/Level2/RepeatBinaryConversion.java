@@ -1,5 +1,5 @@
 package Pragrammers.Level2;
-// 이진 변환 반복하기
+//이진 변환 반복하기
 public class RepeatBinaryConversion {
 
     public static void main(String[] args) {
