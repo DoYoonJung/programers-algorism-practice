@@ -1,5 +1,5 @@
 package Pragrammers.Level2;
-//멀쩡한 사각형
+// 멀쩡한 사각형
 public class PlainSquare {
 
     public static void main(String[] args) {
