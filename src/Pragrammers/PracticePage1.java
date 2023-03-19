@@ -1,49 +1,26 @@
 package Pragrammers;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.*;
 
 public class PracticePage1 {
-
     public static void main(String[] args) {
-        int N=2;
-        int number = 11;
-        int t = N;
-        Set<Integer>[] arr = new Set[9];
+        int[][] board = {{0, 1, 1, 1}, {1, 1, 1, 1}, {1, 1, 1, 1}, {0, 0, 1, 0}};
 
-        for (int i = 1; i < 9; i++) {
-            arr[i] = new HashSet<>();
-
-            arr[i].add(t);
-            t = t * 10 + N;
-        }
-
-        for (int i = 1; i < 9; i++) {
-            for (int j = 1; j < i; j++) {
-                for (Integer a : arr[j]) {
-                    for (Integer b : arr[i - j]) {
-                        arr[i].add(a + b);
-                        arr[i].add(a - b);
-                        arr[i].add(a * b);
-                        if (b != 0) {
-                            arr[i].add(a / b);
-                        }
-                    }
-                }
-            }
-        }
-        int answer = 0;
-        for (int i = 1; i < 9; i++) {
-            if (arr[i].contains(number)) {
-                answer=i;
-                break;
+        int[][] boards = new int[board.length+1][board[0].length+1];
+        for (int i = 1; i <= board.length; i++) {
+            for (int j = 1; j <= board[0].length; j++) {
+                boards[i][j] = board[i - 1][j - 1];
+                board[i - 1][j - 1]=0;
             }
         }
 
-        System.out.println(answer);
+        for (int i = 0; i < boards.length; i++) {
+            for (int j = 0; j < boards[0].length; j++) {
+                System.out.print(boards[i][j]+" ");
 
-
-
+            }
+            System.out.println();
+        }
 
     }
 }

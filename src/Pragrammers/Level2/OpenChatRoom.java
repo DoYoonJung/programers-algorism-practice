@@ -16,6 +16,7 @@ public class OpenChatRoom {
 
         int count = 0;
 
+
         for (int i = 0; i < record.length; i++) {
             String temp[] = record[i].split(" ");
 
