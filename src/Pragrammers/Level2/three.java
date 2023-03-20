@@ -1,7 +1,7 @@
 package Pragrammers.Level2;
 
 
-
+//11번가 문제 3번
 public class three {
     static int[] location;
     static int answer = 0;
